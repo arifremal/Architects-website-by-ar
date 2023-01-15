@@ -247,6 +247,16 @@ section four start
   width: 240px;
   margin-top: 80px;
 }
+/* special hover effect added */
+.item:hover {
+transform: scale(1.3);
+transition: transform 1s ease-in-out;
+
+}
+
+
+
+
 .item-title {
   font-weight: 600;
   font-size: 45px;
