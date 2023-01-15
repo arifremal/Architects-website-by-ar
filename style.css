@@ -1,0 +1,185 @@
+/* ------
+Google font added
+--------------- */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*---------------
+ common styles 
+-------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --top-section-bg-color: #fff4e7;
+  --button-color: #ff900e;
+  --secondary-bg-color: #ffffff;
+  --headinf-text-color: #131313;
+  --sub-title-text-color: #727272;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* ----------
+header style start 
+-----------------------------*/
+.hero-section-container {
+  max-width: 1400px;
+  margin: 0;
+  padding: 0 40px;
+  background-color: var(--top-section-bg-color);
+}
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+
+  width: 100%;
+}
+nav > ul > li {
+  display: inline;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--sub-title-text-color);
+}
+
+.logo-title {
+  color: var(--headinf-text-color);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* ------
+Header style end
+------------ */
+
+/* --------
+hero-section style start
+-------------- */
+.hero-section {
+  text-align: center;
+}
+.hero-section-title {
+  font-weight: 700;
+  font-size: 54px;
+  color: var(--headinf-text-color);
+  margin: 20px;
+}
+.hero-section-des {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--sub-title-text-color);
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.hero-section-button {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 20px 25px;
+  background-color: var(--button-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.hero-section-image {
+  width: 800px;
+  height: 500px;
+  padding-bottom: 50px;
+}
+
+/* --------
+hero-section style end
+-------------- */
+
+/* -------------------
+section two style start
+----------- */
+
+.section-two-container {
+  padding-bottom: 40px;
+}
+.section-two-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.inner-section-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.inner-image {
+  width: 342px;
+  height: 342px;
+}
+.info-first-text {
+  color: #727272;
+  font-weight: 500;
+  font-size: 45px;
+}
+.second-text {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--headinf-text-color);
+}
+.third-text{
+    font-weight: 700;
+font-size: 45px;
+line-height: 53px;
+
+color: #FF900E;
+}
+.info-description{
+    font-weight: 400;
+font-size: 16px;
+color: var(--sub-title-text-color);
+margin: 20px 0px;
+}
+
+/* -------------------
+section two style start
+----------- */
+
+@media only screen and (max-width: 576px) {
+  .header-area {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+  nav > ul > li {
+    display: block;
+    margin: 20px;
+  }
+  .hero-section-title {
+    font-size: 30px;
+  }
+  .hero-section-image {
+    height: 400px;
+    width: 300px;
+  }
+  /* style for section two */
+  .section-two-info{
+    flex-direction: column;
+  }
+  .inner-section-image {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .hero-section-image {
+    height: 500px;
+    width: 600px;
+  }
+}
