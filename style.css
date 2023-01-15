@@ -105,7 +105,7 @@ section two style start
 ----------- */
 
 .section-two-container {
-  padding-bottom: 40px;
+  padding: 40px;
 }
 .section-two-info {
   display: flex;
@@ -147,8 +147,14 @@ margin: 20px 0px;
 }
 
 /* -------------------
-section two style start
+section two style end
 ----------- */
+
+
+
+
+
+
 
 @media only screen and (max-width: 576px) {
   .header-area {
@@ -164,7 +170,7 @@ section two style start
     font-size: 30px;
   }
   .hero-section-image {
-    height: 400px;
+    height: 250px;
     width: 300px;
   }
   /* style for section two */
@@ -174,6 +180,12 @@ section two style start
   .inner-section-image {
     grid-template-columns: repeat(1,1fr);
   }
+  .left-side-info{
+    padding: 10px;
+  }
+  .inner-section-image{
+    padding: 30px;
+  }
 
 }
 
@@ -181,5 +193,15 @@ section two style start
   .hero-section-image {
     height: 500px;
     width: 600px;
+  }
+    /* style for section two */
+  .section-two-info{
+    flex-direction: column;
+  }
+  .inner-section-image {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .left-side-info{
+    padding: 30px;
   }
 }
