@@ -10,6 +10,7 @@ Google font added
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 :root {
@@ -132,35 +133,223 @@ section two style start
   font-size: 45px;
   color: var(--headinf-text-color);
 }
-.third-text{
-    font-weight: 700;
-font-size: 45px;
-line-height: 53px;
+.third-text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
 
-color: #FF900E;
+  color: #ff900e;
 }
-.info-description{
-    font-weight: 400;
-font-size: 16px;
-color: var(--sub-title-text-color);
-margin: 20px 0px;
+.info-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--sub-title-text-color);
+  margin: 20px 0px;
 }
 
 /* -------------------
 section two style end
 ----------- */
 
+/* --------
+section three start
+------- */
+.section-three-container {
+  padding: 90px;
+}
+.inner-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.inner-container-right > img {
+  height: 600px;
+}
+.section-three-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--headinf-text-color);
+  margin-left: 20px;
+}
+.title-border {
+  border-left: 5px solid #ff900e;
+  margin-bottom: 20px;
+}
+.section-three-sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--sub-title-text-color);
+  margin-bottom: 20px;
+}
+.single-info {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin: 10px;
+}
+.experience-button {
+  padding: 20px 20px;
+  background-color: var(--button-color);
+  border: none;
+  position: relative;
+  bottom: 100px;
+  border-radius: 5px;
+  right: 20px;
+}
+.experience-button > span {
+  font-weight: 700;
+  color: white;
+  font-size: 35px;
+}
+.experience-button > small {
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+
+/* --------
+section three end
+------- */
+
+/* ------------
+section four start
+----------------- */
+.section-four-container {
+  padding: 40px;
+}
+.section-four-inner-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.section-four-title{
+  font-weight: 700;
+font-size: 45px;
+color: var(--headinf-text-color);
+}
+.section-four-description{
+  font-weight: 400;
+font-size: 16px;
+color: var(--sub-title-text-color);
+margin-top: 10px;
+
+}
+.item {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  width: 240px;
+  margin-top: 80px;
+}
+.item-title{
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--headinf-text-color);
+}
+.item-des{
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--sub-title-text-color);
+}
 
 
 
 
+
+/* ------
+section five start
+-------- */
+.section-five-text{
+  text-align: center;
+}
+
+.sponsors{
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items:center ;
+}
+
+/*--------------------
+ media query
+ ---------------------*/
+
+
+/* blog section */
+/* .section-six-blog{
+
+}
+.blog-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.blog-content {
+height: 500px;
+width: 360px;
+background-color: var(--top-section-bg-color);
+text-align: center;
+border: none;
+border-radius: 10px;
+
+margin-bottom: 30px;
+
+}
+.blog-images {
+width: 360px;
+height: 320px;
+border: none;
+border-radius: 10pz;
+}
+
+.blog-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 35px;
+}
+.blog-des {
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+} */
+
+
+
+
+
+.footer-container{
+  background-color: var(--top-section-bg-color);
+  height: 20px;
+  margin: 80px 80px;
+  padding: 40px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  height: 200px;
+}
 
 
 @media only screen and (max-width: 576px) {
   .header-area {
     flex-direction: column;
     text-align: center;
-    padding-top: 10px;
+  
   }
   nav > ul > li {
     display: block;
@@ -171,37 +360,107 @@ section two style end
   }
   .hero-section-image {
     height: 250px;
-    width: 300px;
+    width: 250px;
   }
   /* style for section two */
-  .section-two-info{
+  .section-two-info {
     flex-direction: column;
   }
   .inner-section-image {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .left-side-info{
+  .left-side-info {
     padding: 10px;
   }
-  .inner-section-image{
-    padding: 30px;
+  .inner-section-image {
+    padding: 10px;
+  }
+  /* style for section two end */
+
+  /* style for section three start */
+  .inner-container {
+    flex-direction: column-reverse;
+  }
+  .section-three-container {
+    padding: 0px 40px;
+  }
+  .inner-container-right {
+    width: 100%;
+    padding: 0;
+  }
+  .inner-container-right > img {
+    height: 400px;
+    width: 250px;
+  }
+  /* style for section three end */
+
+
+   /* style for section four start */
+
+
+  .section-four-inner-container{
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
+
+  .sponsors{
+    flex-direction: column;
+  }
+
+  .blog-container{
+    flex-direction: column;
+    
+  }
+  .footer-container{
+    padding: 0;
+  }
+  
 }
+
+
+
+
+
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .hero-section-image {
     height: 500px;
     width: 600px;
   }
-    /* style for section two */
-  .section-two-info{
+  /* style for section two start */
+  .section-two-info {
     flex-direction: column;
   }
   .inner-section-image {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .left-side-info{
+  .left-side-info {
     padding: 30px;
   }
+
+  /* style for section two end */
+
+  /* style for section three start*/
+  .inner-container {
+    flex-direction: column-reverse;
+  }
+  .section-three-container {
+    padding: 0px 40px;
+  }
+  .inner-container-right {
+    width: 100%;
+    padding: 0;
+  }
+  .inner-container-right > img {
+    height: 500px;
+    width: 600px;
+  }
+}
+
+.hide {
+  display: none;
 }
