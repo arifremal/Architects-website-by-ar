@@ -10,7 +10,6 @@ Google font added
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 :root {
@@ -225,18 +224,16 @@ section four start
   justify-content: center;
   text-align: center;
 }
-.section-four-title{
+.section-four-title {
   font-weight: 700;
-font-size: 45px;
-color: var(--headinf-text-color);
+  font-size: 45px;
+  color: var(--headinf-text-color);
 }
-.section-four-description{
+.section-four-description {
   font-weight: 400;
-font-size: 16px;
-color: var(--sub-title-text-color);
-margin-top: 30px;
-
-
+  font-size: 16px;
+  color: var(--sub-title-text-color);
+  margin-top: 30px;
 }
 .item {
   border: 1px solid #ff900e;
@@ -250,73 +247,64 @@ margin-top: 30px;
   width: 240px;
   margin-top: 80px;
 }
-.item-title{
+.item-title {
   font-weight: 600;
   font-size: 45px;
   color: var(--headinf-text-color);
 }
-.item-des{
+.item-des {
   font-weight: 600;
   font-size: 20px;
   color: var(--sub-title-text-color);
 }
 
-
-
-
-
 /* ------
 section five start
 -------- */
-.section-five-text{
+.section-five-text {
   text-align: center;
 }
 
-.sponsors{
+.sponsors {
   margin-top: 30px;
   display: flex;
   gap: 50px;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   margin-bottom: 30px;
 }
+.sponsors > img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.blogs {
+  width: 329px;
 
-
- .blogs{
-    width: 329px;
-  
-    background: #ffffff;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    padding: 20px 17px;
-  }
-  .blog-section{
-    padding: 50px;
-  }
-.blog-des{
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 20px 17px;
+}
+.blog-section {
+  padding: 50px;
+}
+.blog-des {
   font-size: 16px;
   color: var(--sub-title-text-color);
 }
-.blog-title{
+.main-blog-title {
   font-size: 38px;
   color: var(--headinf-text-color);
   margin-bottom: 20px;
   text-align: center;
-
-
 }
-.blog-innner-container{
+.blog-innner-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-
 }
 
-
-
-
-
-.footer-container{
+.footer-container {
   background-color: var(--top-section-bg-color);
   height: 20px;
   margin: 80px 80px;
@@ -327,16 +315,26 @@ section five start
   align-items: center;
   justify-content: center;
 }
-.footer{
+.footer {
   height: 200px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* Responsive media query */
 @media only screen and (max-width: 576px) {
   .header-area {
     flex-direction: column;
     text-align: center;
-  
   }
   nav > ul > li {
     display: block;
@@ -381,11 +379,9 @@ section five start
   }
   /* style for section three end */
 
+  /* style for section four start */
 
-   /* style for section four start */
-
-
-  .section-four-inner-container{
+  .section-four-inner-container {
     flex-direction: column;
     gap: 5px;
     justify-content: center;
@@ -393,30 +389,23 @@ section five start
     text-align: center;
   }
 
-
-  .sponsors{
+  .sponsors {
     flex-direction: column;
   }
 
-  .blog-container{
+  .blog-container {
     flex-direction: column;
-    
   }
-  .footer-container{
+  .footer-container {
     padding: 50px;
     margin: 30px;
   }
-  .blog-innner-container{
-    grid-template-columns: repeat(1,1fr);
+  .blog-innner-container {
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
   }
 }
-
-
-
-
-
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .hero-section-image {
